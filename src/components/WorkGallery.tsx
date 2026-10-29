@@ -5,15 +5,16 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { designMedia, logosMedia, resultsMedia } from '../data/media';
 import { interaction } from '../data/interaction';
 import type { Lang } from '../data/interaction';
+import { reelsMedia } from '../data/reels';
 import { MediaViewer } from './MediaViewer';
 
 export function WorkGallery({ lang }: { lang: Lang }) {
-  const [active, setActive] = useState<'results' | 'design'>('results');
-  const [counts, setCounts] = useState({ results: 4, design: 3 });
+  const [active, setActive] = useState<'results' | 'design' | 'reels'>('results');
+  const [counts, setCounts] = useState({ results: 4, design: 3, reels: 3 });
   const [preview, setPreview] = useState<number | null>(null);
   const reducedMotion = useReducedMotion();
   const c = interaction[lang];
-  const items = active === 'results' ? resultsMedia : designMedia;
+  const items = active === 'results' ? resultsMedia : active === 'design' ? designMedia : [...reelsMedia, ...resultsMedia.filter(item => item.kind === 'video')];
   const count = Math.min(counts[active], items.length);
   const batchSize = active === 'results' ? 4 : 3;
   const remaining = Math.min(batchSize, items.length - count);
@@ -21,7 +22,7 @@ export function WorkGallery({ lang }: { lang: Lang }) {
   return <>
     <div className="work-intro"><h3 className="section-heading">{c.title}<em className="handwritten">{c.accent}</em></h3><p className="section-description">{c.lead}</p></div>
     <div className="work-filter" role="group" aria-label={`${c.results} / ${c.design}`}>
-      {(['results', 'design'] as const).map(key => <button key={key} type="button" aria-pressed={key === active} onClick={() => setActive(key)} className={key === active ? 'active' : ''}>{c[key]}<span>{key === 'results' ? resultsMedia.length : designMedia.length}</span></button>)}
+      {(['results', 'design', 'reels'] as const).map(key => <button key={key} type="button" aria-pressed={key === active} onClick={() => setActive(key)} className={key === active ? 'active' : ''}>{key === 'reels' ? 'Reels' : c[key]}<span>{key === 'results' ? resultsMedia.length : key === 'design' ? designMedia.length : reelsMedia.length + 1}</span></button>)}
     </div>
     <div className={`work-grid work-grid--${active}`} key={active}>
       {items.slice(0, count).map((item, index) => <motion.button type="button" key={item.id} className="work-card" aria-label={`${c.open}: ${item.brand}, ${index + 1}`} onClick={() => setPreview(index)} initial={reducedMotion ? false : { opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.03 }} transition={{ duration: reducedMotion ? 0 : 0.5, delay: reducedMotion ? 0 : index % batchSize * 0.055 }}>

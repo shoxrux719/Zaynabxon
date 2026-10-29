@@ -192,3 +192,7 @@
   .brand-card { transform:none; }
   .submit-spinner { animation:none; }
 }
+
+.work-grid--reels { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.work-grid--reels .work-card-preview { aspect-ratio:9/16; }
+@media(max-width:767px){.work-grid--reels{grid-template-columns:repeat(2,minmax(0,1fr));}}
