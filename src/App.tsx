@@ -97,7 +97,6 @@ function App() {
         <motion.div {...reveal} className="portrait-card">
           <img src="/assets/zaynabxon/portrait.webp" alt={c.fullName} fetchPriority="high" width="1024" height="1090" />
           <div className="portrait-caption"><span className="portrait-label">{e.role}</span><h1>{c.lastName}<span>{c.firstName}</span></h1></div>
-          <div className="portrait-note handwritten">{e.portraitNote}</div>
         </motion.div>
         <article className="hero-panel">
           <div className="eyebrow"><span className="status-dot" /> SMM / CONTENT / MARKETING</div>
