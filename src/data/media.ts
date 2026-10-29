@@ -1,4 +1,4 @@
-export type MediaItem = { id: string; brand: string; kind: "image" | "video"; src: string; thumb: string; width: number; height: number; category?: string };
+export type MediaItem = { id: string; brand: string; kind: "image" | "video"; src: string; thumb: string; width: number; height: number; category?: string; duration?: string };
 
 export const resultsMedia: MediaItem[] = [
   {
@@ -212,6 +212,7 @@ export const resultsMedia: MediaItem[] = [
     "id": "results-img_8742",
     "brand": "clinics.uz",
     "kind": "video",
+    "duration": "0:43",
     "src": "/assets/zaynabxon/work/img_8742.mp4",
     "width": 720,
     "height": 1280,

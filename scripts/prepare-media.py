@@ -81,7 +81,7 @@ for file in unique_files('Logo'):
     thumb = save_webp(image, f'logo-{file.stem.lower()}-thumb.webp', (280, 280), 84)
     assets['logos'].append({'id': file.stem.lower(), 'brand': name, 'category': category, 'kind': 'image', 'src': src, 'thumb': thumb, 'width': image.width, 'height': image.height})
 
-source = 'export type MediaItem = { id: string; brand: string; kind: "image" | "video"; src: string; thumb: string; width: number; height: number; category?: string };\n\n'
+source = 'export type MediaItem = { id: string; brand: string; kind: "image" | "video"; src: string; thumb: string; width: number; height: number; category?: string; duration?: string };\n\n'
 for key, rows in assets.items():
     source += f'export const {key}Media: MediaItem[] = ' + json.dumps(rows, ensure_ascii=False, indent=2) + ';\n\n'
 (ROOT / 'src/data/media.ts').write_text(source, encoding='utf-8')

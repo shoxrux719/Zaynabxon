@@ -1,7 +1,7 @@
 export const editorial = {
   uz: {
     hero: 'Kontentga ma’no.', accent: 'Brendga xarakter.',
-    intro: 'Men Zaynabxonman. Strategiya, matn va vizualni bitta yo‘nalishga birlashtiraman. G‘oyadan aniq topshiriqqacha, ijrodan statistikagacha — kontentning har bir bosqichiga e’tibor beraman.',
+    intro: 'Men Zaynabxon Xusanova, SMM mutaxassisiman. Ijtimoiy tarmoqlar uchun kontent strategiyasi, kontent reja, kreativ g‘oyalar va matnlar ishlab chiqish bilan shug‘ullanaman.',
     discuss: 'Loyihani muhokama qilamiz', explore: 'Ish jarayonim', scroll: 'Yaqinroq tanishamiz',
     role: 'SMM mutaxassis',
     backgroundLead: 'Ijodiy qarash.', backgroundAccent: 'Tizimli yondashuv.',
@@ -18,7 +18,7 @@ export const editorial = {
   },
   ru: {
     hero: 'Контент со смыслом.', accent: 'Бренд с характером.',
-    intro: 'Я Зайнабхон. Объединяю стратегию, тексты и визуал в одно направление. От идеи до понятного задания, от исполнения до статистики — уделяю внимание каждому этапу работы с контентом.',
+    intro: 'Я Зайнабхон Хусанова, SMM-специалист. Разрабатываю контент-стратегии и контент-планы для социальных сетей, придумываю креативные идеи и пишу тексты.',
     discuss: 'Обсудим ваш проект', explore: 'Как я работаю', scroll: 'Познакомимся ближе',
     role: 'SMM-специалист',
     backgroundLead: 'Творческий взгляд.', backgroundAccent: 'Системный подход.',
@@ -35,7 +35,7 @@ export const editorial = {
   },
   en: {
     hero: 'Content with meaning.', accent: 'A brand with character.',
-    intro: 'I’m Zaynabxon. I bring strategy, copy and visuals into one clear direction. From an idea to a creative brief, from delivery to analytics — I care about every stage of your content.',
+    intro: 'I’m Zaynabxon Xusanova, an SMM specialist. I develop content strategies and content plans for social media, create original ideas and write copy.',
     discuss: 'Let’s discuss your project', explore: 'How I work', scroll: 'Get to know me',
     role: 'SMM specialist',
     backgroundLead: 'A creative eye.', backgroundAccent: 'A structured approach.',
