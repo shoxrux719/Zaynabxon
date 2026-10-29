@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.vite-*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Legacy personal assets kept locally but intentionally excluded from the anonymous template
+public/assets/Avatar/
+public/assets/Logo/
+public/assets/Result/
+public/assets/Sertificates/
+public/assets/anonymous-avatar.png
+public/assets/dinora-avatar.png
+public/assets/optimized/avatar.webp
+public/assets/optimized/certificates/
+public/assets/optimized/results/
+public/assets/optimized/dinora-avatar*
+public/assets/optimized/covers/*-blue.png
+public/assets/optimized/covers/certificate-single.png
