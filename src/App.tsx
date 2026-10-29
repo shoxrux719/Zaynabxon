@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { ArrowDown, ArrowUpRight, Award, BarChart3, Clapperboard, FileText, Focus, Layers3, Mail, MapPin, Moon, MoveUpRight, Phone, Send, Sun, Users, X } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Award, BarChart3, Clapperboard, Focus, Layers3, Mail, MapPin, Moon, MoveUpRight, Phone, Send, Sun, Users, X } from 'lucide-react';
 import { motion, useReducedMotion, useScroll, useSpring } from 'framer-motion';
 import { EntranceTitle, entranceCopy } from './components/EntranceTitle';
 import { content, profile } from './data/profile';
@@ -14,7 +14,7 @@ import './work.css';
 
 type Lang = keyof typeof content;
 const certificate = '/assets/zaynabxon/space-academy.webp';
-const deliverableIcons = [Clapperboard, FileText, Layers3, BarChart3];
+const deliverableIcons = [Clapperboard, Focus, Layers3, BarChart3];
 const strategyIcons = [Users, Focus, Layers3];
 
 function CertificateViewer({ lang, onClose }: { lang: Lang; onClose: () => void }) {
@@ -103,7 +103,7 @@ function App() {
           <h2 className="hero-title"><span>{e.hero}</span><em className="handwritten">{e.accent}</em></h2>
           <p className="hero-description">{e.intro}</p>
           <div className="hero-actions"><a className="button-primary" href="#contact-form">{e.discuss}<ArrowUpRight size={20} /></a><a className="text-link" href="#cases">{e.explore}<ArrowDown size={16} /></a></div>
-          <div className="stats-strip">{[3, 23, 6].map((value, index) => <div className="stat-card" key={value}><strong>{value.toString().padStart(2, '0')}</strong><span>{c.stats[index]}</span></div>)}</div>
+          <div className="stats-strip">{[3, 23, 8].map((value, index) => <div className="stat-card" key={value}><strong>{value.toString().padStart(2, '0')}</strong><span>{c.stats[index]}</span></div>)}</div>
           <a className="hero-scroll" href="#resume"><ArrowDown size={15} />{e.scroll}</a>
         </article>
       </section>

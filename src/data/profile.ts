@@ -19,7 +19,7 @@ export const content = {
     "stats": [
       "Yillik tajriba",
       "Yosh",
-      "Hard skills"
+      "Loyihalar"
     ],
     "contactsTitle": "Kontaktlar",
     "skillsTitle": "Hard skills",
@@ -49,7 +49,7 @@ export const content = {
     "casesHeading": "SMM / KONTENT",
     "smmNames": [
       "Reels",
-      "Grafik postlar",
+      "Tahlil va strategiya",
       "Vizual",
       "Statistika"
     ],
@@ -59,8 +59,8 @@ export const content = {
       "Kontent strategiyasi"
     ],
     "smmResults": [
-      "1–2 ta Reels uchun texnik topshiriq va ijroni muvofiqlashtirish.",
-      "Matni bilan 1–2 ta grafik post uchun topshiriq tayyorlash.",
+      "Reels g‘oyalari, ssenariylar, post matnlari va Stories ketma-ketligini ishlab chiqish.",
+      "Maqsad aniqlanadi, raqobatchilar va MA tahlili, strategiya, kontent plan tayyorlash",
       "Loyiha uchun yagona vizual yo‘nalish va taqdimot.",
       "Kontent ko‘rsatkichlarini kuzatish va statistikani tahlil qilish."
     ],
@@ -106,7 +106,7 @@ export const content = {
     "stats": [
       "Года опыта",
       "Возраст",
-      "Hard skills"
+      "Проектов"
     ],
     "contactsTitle": "Контакты",
     "skillsTitle": "Hard skills",
@@ -136,7 +136,7 @@ export const content = {
     "casesHeading": "SMM / КОНТЕНТ",
     "smmNames": [
       "Reels",
-      "Графические посты",
+      "Анализ и стратегия",
       "Визуал",
       "Статистика"
     ],
@@ -146,8 +146,8 @@ export const content = {
       "Контент-стратегия"
     ],
     "smmResults": [
-      "Техническое задание и координация исполнения 1–2 Reels.",
-      "Подготовка задания на 1–2 графических поста с текстами.",
+      "Разработка идей для Reels, сценариев, текстов постов и последовательностей Stories.",
+      "Определение цели, анализ конкурентов и целевой аудитории, разработка стратегии и контент-плана.",
       "Единое визуальное направление и подача проекта.",
       "Наблюдение за показателями контента и анализ статистики."
     ],
@@ -193,7 +193,7 @@ export const content = {
     "stats": [
       "Years of experience",
       "Age",
-      "Hard skills"
+      "Projects"
     ],
     "contactsTitle": "Contacts",
     "skillsTitle": "Hard skills",
@@ -223,7 +223,7 @@ export const content = {
     "casesHeading": "SMM / CONTENT",
     "smmNames": [
       "Reels",
-      "Graphic posts",
+      "Analysis & strategy",
       "Visuals",
       "Analytics"
     ],
@@ -233,8 +233,8 @@ export const content = {
       "Content strategy"
     ],
     "smmResults": [
-      "Briefing and coordinating delivery of 1–2 Reels.",
-      "Preparing briefs for 1–2 graphic posts with copy.",
+      "Developing Reels ideas, scripts, post copy and Stories sequences.",
+      "Defining goals, analysing competitors and the target audience, developing a strategy and content plan.",
       "A consistent visual direction and presentation for the project.",
       "Tracking content performance and analysing statistics."
     ],

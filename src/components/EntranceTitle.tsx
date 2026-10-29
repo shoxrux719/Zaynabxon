@@ -5,9 +5,9 @@ import { content } from '../data/profile';
 // App also uses these localized labels for the control that replays this dialog.
 // eslint-disable-next-line react-refresh/only-export-components
 export const entranceCopy = {
-  uz: { label: 'Portfolio taqdimoti', eyebrow: 'SMM / Kontent marketing', lead: 'Har bir brendning', accent: 'o‘z ovozi bor.', signal: ['Strategiya', 'Kontent', 'Xarakter'], skip: 'Portfolioga o‘tish', replay: 'Kirish titrini qayta ko‘rish', footer: 'Strategiya · Kontent · Xarakter', stage: 'Portfolio' },
-  ru: { label: 'Вступление в портфолио', eyebrow: 'SMM / Контент-маркетинг', lead: 'У каждого бренда', accent: 'есть свой голос.', signal: ['Стратегия', 'Контент', 'Характер'], skip: 'Перейти к портфолио', replay: 'Посмотреть вступительный титр', footer: 'Стратегия · Контент · Характер', stage: 'Портфолио' },
-  en: { label: 'Portfolio introduction', eyebrow: 'SMM / Content marketing', lead: 'Every brand has', accent: 'a voice of its own.', signal: ['Strategy', 'Content', 'Character'], skip: 'Explore the portfolio', replay: 'Replay the introduction', footer: 'Strategy · Content · Character', stage: 'Portfolio' },
+  uz: { label: 'Portfolio taqdimoti', eyebrow: 'SMM', lead: 'Har bir brendning', accent: 'o‘z ovozi bor.', signal: ['Strategiya', 'Kontent', 'Xarakter'], skip: 'Portfolioga o‘tish', replay: 'Kirish titrini qayta ko‘rish', footer: 'Strategiya · Kontent · Xarakter', stage: 'Portfolio' },
+  ru: { label: 'Вступление в портфолио', eyebrow: 'SMM', lead: 'У каждого бренда', accent: 'есть свой голос.', signal: ['Стратегия', 'Контент', 'Характер'], skip: 'Перейти к портфолио', replay: 'Посмотреть вступительный титр', footer: 'Стратегия · Контент · Характер', stage: 'Портфолио' },
+  en: { label: 'Portfolio introduction', eyebrow: 'SMM', lead: 'Every brand has', accent: 'a voice of its own.', signal: ['Strategy', 'Content', 'Character'], skip: 'Explore the portfolio', replay: 'Replay the introduction', footer: 'Strategy · Content · Character', stage: 'Portfolio' },
 } as const;
 
 type EntrancePhase = 'signal' | 'name' | 'signature' | 'exit';
